@@ -2644,3 +2644,7 @@
 /.next/trace
 /.next/trace-build
 /.next/turbopack
+/.next/
+/node_modules/
+/.idea/
+/.vscode/
