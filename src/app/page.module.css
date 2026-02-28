@@ -53,6 +53,10 @@
     padding: 8rem 1.5rem;
 }
 
+.animate{
+    animation: slideUp 0.8s ease-out forwards !important;
+}
+
 .aboutMe{
     color: var(--fullbutton) !important;
 }
@@ -67,4 +71,8 @@
     font-size: 1.125rem;
     line-height: 1.625;
     font-weight: normal;
+}
+
+.imgprops{
+    border-radius: 1.5rem !important;
 }

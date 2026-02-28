@@ -59,7 +59,7 @@ export default function Home() {
           <div className={"container"}>
               <div className={"row align-items-center g-5"}>
                   <div className={"col-md-6"}>
-                      <div className={"animate-slide-up"}>
+                      <div className={s.animate}>
                         <span className={`d-block text-uppercase fw-semibold ls-widest mb-2 small ${s.aboutMe}`}>
                             About Me
                         </span>
@@ -67,18 +67,15 @@ export default function Home() {
                               Actually, programming is fun
                           </h2>
                           <p id="about-text" className={`lead mb-0 ${s.aboutText}`}>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                              Donec magna metus, aliquam nec sodales nec, imperdiet at massa.
-                              Nunc eu lacinia felis. Curabitur cursus, risus pulvinar bibendum ultrices, libero urna tempus nisi, a condimentum nunc ex quis enim.
-                              Donec urna massa, blandit eget laoreet a, ultricies eget leo.
-                              Phasellus et dui mi. Nam eget metus id nisi volutpat blandit.
-                              Ut vitae erat maximus elit imperdiet tempor.
-                              Sed hendrerit, arcu ut volutpat porta, massa metus luctus ligula, vitae facilisis dolor ex quis arcu.
-                              Pellentesque rutrum lorem urna, nec molestie arcu cursus sollicitudin.
-                              Quisque nec sapien sollicitudin, ultricies lectus non, venenatis felis.
-                              Sed ultrices, purus eu bibendum tristique, dolor turpis aliquam sem, et suscipit neque massa eget ipsum.
+                              Hi there! I’m a dedicated Information Technology student currently specializing in C# and .NET development.
+                              Although I’m comfortable working with Java and other languages, I prefer the versatility and power of the Microsoft stack.
+                              My goal is to bridge the gap between complex ideas and reliable software through clean, efficient code.
+                              I’m an eager learner, always staying curious about the latest industry trends and ready to take the next step in my journey as a developer.
                           </p>
                       </div>
+                  </div>
+                  <div className={"col-md-6"}>
+                      <img src="/csharpimage.jpg" className={`img-fluid ${s.imgprops}`} alt={"An image of C# code"}></img>
                   </div>
               </div>
           </div>
