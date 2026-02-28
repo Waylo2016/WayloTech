@@ -1,4 +1,4 @@
-name: azure-deploy.yml
+name: master_WayloTechMainPage.yml
 
 on:
   push:
