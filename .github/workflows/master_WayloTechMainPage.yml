@@ -33,14 +33,23 @@ jobs:
       - name: Prepare standalone deployment folder
         run: |
           mkdir -p deploy
-  
-          cp -r .next/standalone/. deploy/
-  
-          mkdir -p deploy/public
-          cp -r public/. deploy/public/
-  
+          # Use -L to dereference symlinks, ensuring a self-contained deployment
+          cp -rL .next/standalone/. deploy/
+          
+          # Copy public and static files, which are not included in standalone output by default
+          if [ -d "public" ]; then
+            mkdir -p deploy/public
+            cp -rL public/. deploy/public/
+          fi
+          
           mkdir -p deploy/.next/static
-          cp -r .next/static/. deploy/.next/static/
+          cp -rL .next/static/. deploy/.next/static/
+
+      - name: Include web.config for Azure Windows
+        run: |
+          if [ -f "web.config" ]; then
+            cp web.config deploy/web.config
+          fi
 
       - name: Create deployment zip
         run: |
