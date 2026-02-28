@@ -33,10 +33,10 @@ jobs:
       - name: Prepare standalone deployment folder
         run: |
           mkdir deploy
-          cp -r .next/standalone/. deploy/
-          cp -r public deploy/public
+          cp -a .next/standalone/. deploy/
+          cp -a public deploy/public
           mkdir -p deploy/.next
-          cp -r .next/static deploy/.next/static
+          cp -a .next/static deploy/.next/
 
       - name: Create deployment zip
         run: |
