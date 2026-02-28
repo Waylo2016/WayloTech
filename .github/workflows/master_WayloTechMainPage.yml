@@ -45,12 +45,6 @@ jobs:
           mkdir -p deploy/.next/static
           cp -rL .next/static/. deploy/.next/static/
 
-      - name: Include web.config for Azure Windows
-        run: |
-          if [ -f "web.config" ]; then
-            cp web.config deploy/web.config
-          fi
-
       - name: Create deployment zip
         run: |
           cd deploy
@@ -83,3 +77,4 @@ jobs:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
           package: release.zip
+          startup-command: "HOSTNAME=0.0.0.0 node server.js"
