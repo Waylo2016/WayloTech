@@ -39,13 +39,13 @@ export default function Home() {
                   {/* CTA Buttons */}
                   <div className="d-flex justify-content-center gap-3">
                       <Link
-                          href="#projects"
+                          href="/projects"
                           className={`rounded-pill fw-medium hover-scale ${s.btnPrimary}`}
                       >
                           View Work
                       </Link>
                       <Link
-                          href="#contact"
+                          href="/contact"
                           className={`rounded-pill fw-medium hover-scale ${s.btnSecondary}`}
                       >
                           Get in Touch
