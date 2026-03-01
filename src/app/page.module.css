@@ -76,3 +76,32 @@
 .imgprops{
     border-radius: 1.5rem !important;
 }
+
+.projects {
+    background-color: var(--alt-background) !important;
+    padding: 8rem 1.5rem;
+}
+
+.projectsInfo {
+    max-width: 72rem;
+}
+
+.portfolio{
+    color: var(--fullbutton);
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.projectPads{
+    margin-bottom: 5rem;
+}
+
+.projectsTitle{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', Georgia, serif;
+}

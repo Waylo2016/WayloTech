@@ -1,5 +1,6 @@
 import s from "./page.module.css";
 import Header from "@/components/Header/Header";
+import ProjectCard from "@/components/ProjectCard/ProjectCard"
 import Link from "next/link";
 
 
@@ -79,6 +80,35 @@ export default function Home() {
                   </div>
               </div>
           </div>
+          </section>
+          <section id={"projects"} className={`${s.projects}`}>
+              <div className={s.projectPads}>
+                  <div className={`mx-auto text-center ${s.projectsInfo}`}>
+                      <div>
+                    <span className={`text-uppercase d-block ${s.portfolio}`}>
+                        Portfolio
+                    </span>
+                          <span id={"Projects"} className={`m-0 ${s.projectsTitle}`}>
+                          Projects
+                      </span>
+                      </div>
+                  </div>
+              </div>
+              <div className={"container"}>
+                  <div className={"row g-4 justify-content-center"}>
+                      <div className={"col-12 col-md-6 col-lg-4"}>
+                          <ProjectCard title={"Leafbid"}
+                                       description={"A school project made on behalf of Floriday. " +
+                                           "The entire class was working on this as groups of around 4-5 students."}
+                                       imagePath={"/LeafBid.svg"}
+                                       link={"/projects/leafbid"}
+                                       tags={['UI', 'React', 'ASP.NET']}
+                                       imageShiftX={"-1rem"}
+                                       imageShiftY={"0.5rem"}
+                          />
+                      </div>
+                  </div>
+              </div>
           </section>
       </main>
   );

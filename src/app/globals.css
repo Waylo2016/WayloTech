@@ -1,10 +1,13 @@
 :root {
+    --header: #170d23e6;
     --background: #1a0d2e;
-    --text: #f0f6fc;
-    --text-alt: #8b949e;
+    --alt-background: #2d1b4e;
+    --card-background: #3c2463;
     --border: #6d28d9;
     --fullbutton: #c084fc;
-    --header: #170d23e6;
+    --tag-background: #30363d;
+    --text-alt: #8b949e;
+    --text: #f0f6fc;
 }
 
 html,

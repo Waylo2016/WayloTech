@@ -1,0 +1,50 @@
+.cardLink {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.cardLink:hover {
+    transform: translateY(-5px);
+}
+
+.projectCard {
+    background-color: #3c2463 !important; /* Your specific background */
+    border-radius: 1rem !important;
+    overflow: hidden;
+}
+
+.imageContainer {
+    background: linear-gradient(135deg, #a855f7 0%, #c084fc 100%);
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.25rem;
+}
+
+.projectImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+.description {
+    color: var(--text-alt);
+    line-height: 1.6;
+}
+
+.cardTitle{
+    color: var(--text) !important;
+    font-family: 'Playfair Display', Gregoria, serif;
+}
+
+.tag {
+    background-color: var(--tag-background) !important;
+    color: var(--text-alt) !important;
+    padding: 0.5em 1em !important;
+    font-size: 0.75rem !important;
+}
