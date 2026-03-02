@@ -105,3 +105,43 @@
     font-weight: 700;
     font-family: 'Playfair Display', Georgia, serif;
 }
+
+.contactInfo{
+    max-width: 42rem;
+}
+
+.contact{
+    color: var(--fullbutton);
+    font-family: 'Source Sans 3', system-ui, sans;
+    font-weight: 700;
+}
+
+.contactInfo{
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700
+}
+
+.aboutmsg{
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    font-weight: normal;
+    color: var(--text-alt);
+    font-size: 1.125rem;
+}
+
+.contactButton{
+    border-radius: 9999px !important;
+    background-color: var(--card-background) !important;
+    width: 3rem;
+    height: 3rem;
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+
+.contactButtonSelf{
+    translate: 0 0.9rem;
+    height: 40%;
+
+}
