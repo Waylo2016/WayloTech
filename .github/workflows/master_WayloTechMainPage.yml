@@ -1,7 +1,7 @@
 name: master_WayloTechMainPage.yml
 
 on:
-  push:
+# push:
 #    branches:
 #      - main
 #      - master
