@@ -1,0 +1,15 @@
+.footer{
+    border-top: #21262d 1px solid;
+   padding: 2rem 1.5rem;
+}
+
+.footerText{
+    color: var(--text-alt);
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    font-size: 0.875rem;
+}
+
+.kofi{
+    width: 1.5em;
+    margin-left: 0.35rem;
+}

@@ -110,6 +110,35 @@ export default function Home() {
                   </div>
               </div>
           </section>
+          <section id={"contact"} className={"py-5 px-4"}>
+              <div className={`mx-auto text-center ${s.contactInfo}`}>
+                  <div>
+                      <span className={`text-uppercase d-block ${s.contact}`}>
+                          Contact
+                      </span>
+                      <h2 className={`mb-4 ${s.contactInfo}`}>
+                          Send me a message
+                      </h2>
+                      <p className={`${s.aboutmsg}`}>
+                          Want to reach me or check out my GitHub?
+                      </p>
+                      <div className={`d-flex justify-content-center gap-3`}>
+                          <a className={`d-flex align-content-center justify-content-center hover-scale ${s.contactButton}`} href={"mailto:waylo@waylo.tech"}>
+                              <img
+                                  className={`${s.contactButtonSelf}`}
+                                  src={"/MailVector.svg"}
+                              />
+                          </a>
+                          <a className={`d-flex align-content-center justify-content-center hover-scale ${s.contactButton}`} href={"https://github.com/Waylo2016"}>
+                              <img
+                                  className={`${s.contactButtonSelf}`}
+                                  src={"/githubIcon.svg"}
+                              />
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </section>
       </main>
   );
 }
