@@ -7,7 +7,7 @@ on:
 #      - master
 #    paths:
 #      - "src/app/page.tsx"
-    workflow-dispatch:
+  workflow_dispatch:
 
 env:
   AZURE_WEBAPP_NAME: "WayloTechMainPage"
