@@ -1,49 +1,40 @@
-import s from "@/app/projects/page.module.css";
 import Header from "@/components/Header/Header";
-import Link from "next/link";
-import {Metadata} from "next";
+import ProjectHeader from "@/components/ProjectHeader/ProjectHeader";
+import s from "./page.module.css";
+import {projects} from "@/data/projects";
 
-export const metadata: Metadata = {
-    title: "Projects - Under Construction",
-};
+export default function LeafbidPage() {
+    // Find the project data by ID
+    const project = projects.find(p => p.id === 'leafbid');
 
-export default function Projects() {
+    // Fallback if project isn't found
+    if (!project) return <div>Project not found</div>;
     return (
-        <main className={"d-flex flex-column align-content-center"}>
+        <main>
             <Header />
-            <section id={"UnderConstruction"}
-                     className="min-vh-100 d-flex align-items-center justify-content-center px-3 pt-5">
-                <div className={`text-center animate-fade-in ${s.heroContent}`}>
-                    <div className="mb-4">
-                        <img
-                            src="/WayloTech.svg"
-                            alt="WayloTech logo"
-                            width={96}
-                            height={96}
-                        />
+            <ProjectHeader {...project}>
+                <section className={s.projectBody}>
+                    <div className="container py-5">
+                        <div className="row justify-content-center">
+                            <div className="col-lg-8">
+                                <h3 className={s.header}>Project Overview</h3>
+                                <p>
+                                    Here you can add your long-form content. Since the ProjectHeader
+                                    handles the sticky tags, the rest of the page remains
+                                    perfectly scrollable.
+                                </p>
+
+                                <h3 className={s.header}>The Challenge</h3>
+                                <p>
+
+                                </p>
+
+                                {/* Add as many paragraphs as needed */}
+                            </div>
+                        </div>
                     </div>
-                    <h1
-                        id="hero-name"
-                        className={`display-3 fw-bold mb-4 ${s.heroName}`}
-                    >
-                        Projects
-                    </h1>
-                    <p
-                        id="hero-tagline"
-                        className={`fs-4 fw-light mb-5 ${s.heroTagline}`}
-                    >
-                        This page is currently under construction for your reading pleasure.
-                    </p>
-                    <div className="d-flex justify-content-center gap-3">
-                        <Link
-                            href="/"
-                            className={`rounded-pill fw-medium hover-scale ${s.btnPrimary}`}
-                        >
-                            Back Home
-                        </Link>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </ProjectHeader>
         </main>
     );
 }

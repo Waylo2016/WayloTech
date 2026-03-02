@@ -3,6 +3,8 @@ import Header from "@/components/Header/Header";
 import ProjectCard from "@/components/ProjectCard/ProjectCard"
 import Link from "next/link";
 
+import {projects} from "@/data/projects";
+
 
 export default function Home() {
   return (
@@ -96,17 +98,11 @@ export default function Home() {
               </div>
               <div className={"container"}>
                   <div className={"row g-4 justify-content-center"}>
-                      <div className={"col-12 col-md-6 col-lg-4"}>
-                          <ProjectCard title={"Leafbid"}
-                                       description={"A school project made on behalf of Floriday. " +
-                                           "The entire class was working on this as groups of around 4-5 students."}
-                                       imagePath={"/LeafBid.svg"}
-                                       link={"/projects/leafbid"}
-                                       tags={['UI', 'React', 'ASP.NET']}
-                                       imageShiftX={"-1rem"}
-                                       imageShiftY={"0.5rem"}
-                          />
-                      </div>
+                      {projects.map((project) => (
+                          <div key={project.id} className={"col-12 col-md-6 col-lg-4"}>
+                              <ProjectCard {...project} />
+                          </div>
+                      ))}
                   </div>
               </div>
           </section>
