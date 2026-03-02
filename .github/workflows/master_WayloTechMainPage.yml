@@ -2,11 +2,11 @@ name: master_WayloTechMainPage.yml
 
 on:
   push:
-    branches:
-      - main
-      - master
-    paths:
-      - "src/app/page.tsx"
+#    branches:
+#      - main
+#      - master
+#    paths:
+#      - "src/app/page.tsx"
     workflow-dispatch:
 
 env:
