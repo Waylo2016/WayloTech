@@ -2,17 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import s from './ProjectCard.module.css'
 
-interface ProjectCardProps {
-    title: string;
-    description: string;
-    imagePath: string;
-    link: string;
-    tags: string[];
-    imageShiftX?: string;
-    imageShiftY?: string;
-}
+import {Project} from "@/interfaces/ProjectProps";
 
-const ProjectCard: React.FC<ProjectCardProps> = ({
+const ProjectCard: React.FC<Project> = ({
     title,
     description,
     imagePath,

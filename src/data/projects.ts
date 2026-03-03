@@ -8,6 +8,8 @@ export interface Project {
     imagePosition?: 'left' | 'right';
     imageShiftX?: string;
     imageShiftY?: string;
+    sourceLink?: string;
+    demoLink?: string;
 }
 
 export const projects: Project[] = [
@@ -21,13 +23,7 @@ export const projects: Project[] = [
         imagePosition: 'left',
         imageShiftX: '-1rem',
         imageShiftY: '0.5rem',
-    },
-    {
-        id: "test",
-        title: "test",
-        description: "test",
-        imagePath: "",
-        tags: ['test'],
-        link: "/projects"
+        sourceLink: "https://github.com/MishaOpstal/LeafBid",
+        demoLink: "https://leafbid.onthelink.nl"
     }
 ];

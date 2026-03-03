@@ -4,18 +4,9 @@ import React from 'react';
 import Link from 'next/link';
 import s from './ProjectHeader.module.css';
 
-interface ProjectHeaderProps {
-    title: string;
-    description: string;
-    imagePath: string;
-    tags: string[];
-    imagePosition?: 'left' | 'right';
-    imageShiftX?: string;
-    imageShiftY?: string;
-    children?: React.ReactNode;
-}
+import {ProjectComponentProps} from "@/interfaces/ProjectProps";
 
-const ProjectHeader: React.FC<ProjectHeaderProps> = ({
+const ProjectHeader: React.FC<ProjectComponentProps> = ({
                                                          title,
                                                          description,
                                                          imagePath,

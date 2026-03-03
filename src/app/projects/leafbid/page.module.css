@@ -1,0 +1,28 @@
+.header {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    color: var(--text);
+}
+
+.header2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    color: var(--text);
+}
+
+.paragraph {
+    font-size: .90rem;
+    color: var(--text-alt);
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.list {
+    font-size: .90rem;
+    color: var(--text-alt);
+    transform: translateX( -1rem);
+}
