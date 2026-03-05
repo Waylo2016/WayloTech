@@ -25,5 +25,6 @@ export const projects: Project[] = [
         imageShiftY: '0.5rem',
         sourceLink: "https://github.com/MishaOpstal/LeafBid",
         demoLink: "https://leafbid.onthelink.nl"
-    }
+    },
+
 ];

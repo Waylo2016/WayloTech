@@ -1,13 +1,27 @@
+"use client";
+
 import s from "./page.module.css";
 import Header from "@/components/Header/Header";
 import ProjectCard from "@/components/ProjectCard/ProjectCard"
 import Link from "next/link";
 
 import {projects} from "@/data/projects";
+import {useEffect} from "react";
+
 
 
 export default function Home() {
-  return (
+    // Inside your Home component:
+    useEffect(() => {
+        if (window.location.hash) {
+            // Wait a brief moment for the browser to finish scrolling
+            setTimeout(() => {
+                window.history.replaceState(null, "", window.location.pathname);
+            }, 1000);
+        }
+    }, []);
+
+    return (
       <main className={"d-flex flex-column align-content-center"}>
           <Header />
           {/* Hero Section */}
@@ -42,13 +56,13 @@ export default function Home() {
                   {/* CTA Buttons */}
                   <div className="d-flex justify-content-center gap-3">
                       <Link
-                          href="/projects"
+                          href={"/#projects"}
                           className={`rounded-pill fw-medium hover-scale ${s.btnPrimary}`}
                       >
                           View Work
                       </Link>
                       <Link
-                          href="/contact"
+                          href="MAILTO:waylo@waylo.tech"
                           className={`rounded-pill fw-medium hover-scale ${s.btnSecondary}`}
                       >
                           Get in Touch
@@ -90,7 +104,7 @@ export default function Home() {
                     <span className={`text-uppercase d-block ${s.portfolio}`}>
                         Portfolio
                     </span>
-                          <span id={"Projects"} className={`m-0 ${s.projectsTitle}`}>
+                          <span className={`m-0 ${s.projectsTitle}`}>
                           Projects
                       </span>
                       </div>

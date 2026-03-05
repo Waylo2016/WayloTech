@@ -14,6 +14,8 @@ const ProjectHeader: React.FC<ProjectComponentProps> = ({
                                                          imagePosition = 'right',
                                                          imageShiftX,
                                                          imageShiftY,
+                                                         sourceLink,
+                                                         demoLink,
                                                          children
                                                      }) => {
     const [isStuck, setIsStuck] = React.useState(false);
@@ -30,7 +32,7 @@ const ProjectHeader: React.FC<ProjectComponentProps> = ({
     return (
         <div className={s.headerWrapper}>
             <div className="container">
-                <Link href="/projects" className={s.backButton}>
+                <Link href="/#projects" className={s.backButton}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M19 12H5M12 19l-7-7 7-7"/>
                     </svg>
@@ -39,7 +41,13 @@ const ProjectHeader: React.FC<ProjectComponentProps> = ({
                 <div className={`${s.cardContainer} ${imagePosition === 'left' ? s.reverse : ''}`}>
                     <div className={s.textSection}>
                         <h1 className={s.title}>{title}</h1>
-                        <p className={s.description}>{description}</p>
+                        <p className={`mb-5 ${s.description}`}>{description}</p>
+                        <a className={`d-flex align-content-center justify-content-center hover-scale ${s.contactButton}`} href={sourceLink}>
+                            <img
+                                className={`${s.contactButtonSelf}`}
+                                src={"/githubIcon.svg"}
+                            />
+                        </a>
                     </div>
                     <div className={s.imageSection}>
                         <div className={s.imageBg}>
