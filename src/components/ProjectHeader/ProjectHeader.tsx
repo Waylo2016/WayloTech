@@ -51,14 +51,20 @@ const ProjectHeader: React.FC<ProjectComponentProps> = ({
                     </div>
                     <div className={s.imageSection}>
                         <div className={s.imageBg}>
-                            <a href={demoLink} target="_blank" rel="noopener noreferrer">
-                                <img
-                                    src={imagePath}
-                                    alt={title}
-                                    className={s.image}
-                                    style={{ transform: `translateX(${imageShiftX ?? '0rem'}) translateY(${imageShiftY ?? '0rem'})` }}
-                                />
-                            </a>
+                            {demoLink && (
+                                    <a href={demoLink} target="_blank" rel="noopener noreferrer">
+                                        <img
+                                            src={imagePath}
+                                            alt={title}
+                                            className={s.image}
+                                            style={{
+                                                transform: `translateX(${imageShiftX ?? '0rem'}) translateY(${imageShiftY ?? '0rem'})`,
+                                                width: '100%', // Ensure image respects boundaries
+                                                height: 'auto',
+                                            }}
+                                        />
+                                    </a>
+                                )}
                         </div>
                     </div>
                 </div>

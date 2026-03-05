@@ -21,8 +21,8 @@ export const projects: Project[] = [
         link: '/projects/leafbid',
         tags: ['UI', 'React', 'ASP.NET'],
         imagePosition: 'left',
-        imageShiftX: '-1rem',
-        imageShiftY: '0.5rem',
+        imageShiftX: '0.25rem',
+        imageShiftY: '0.75rem',
         sourceLink: "https://github.com/MishaOpstal/LeafBid",
         demoLink: "https://leafbid.onthelink.nl"
     },
