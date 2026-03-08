@@ -5,7 +5,7 @@ import {projects} from "@/data/projects";
 
 export default function LeafbidPage() {
     // Find the project data by ID
-    const project = projects.find(p => p.id === 'leafbid');
+    const project = projects.find(p => p.id === 'Leafbid');
 
     // Fallback if project isn't found
     if (!project) return <div>Project not found</div>;
