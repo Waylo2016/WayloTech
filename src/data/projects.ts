@@ -26,16 +26,6 @@ export const projects: Project[] = [
         sourceLink: "https://github.com/MishaOpstal/LeafBid",
         demoLink: "https://leafbid.onthelink.nl"
     },
-    {
-        id: "WayloTech",
-        title: "Waylotech Website",
-        description: "A website for showcasing all the projects I have made.",
-        imagePath: "/WayloTech.svg",
-        tags: ['UI', 'Next.JS'],
-        link: "/projects/waylotech",
-        sourceLink: "https://github.com/Waylo2016/WayloTech",
-        demoLink: "https://waylo.tech"
 
-    }
 
 ];
