@@ -1,3 +1,5 @@
+
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,11 +18,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Portfolio",
+  title: "WayloTech",
+  description: "Waylo's Portflio",
   icons:{
     icon: "/WayloTechTab.svg"
-  }
+  },
+    openGraph: {
+      title: "WayloTech Portfolio",
+      description: "My personal portflio and projects",
+      url: "https://waylo.tech",
+      siteName: "WayloTech",
+      images: [
+          {
+             url: "/WayloTech.svg",
+             width: 1200,
+             height: 630,
+             alt: "WayloTech logo"
+          }
+      ]
+    }
 };
 
 export default function RootLayout({
