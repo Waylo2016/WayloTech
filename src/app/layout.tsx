@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://waylo.tech"),
   title: "WayloTech",
   description: "Waylo's Portflio",
   icons:{

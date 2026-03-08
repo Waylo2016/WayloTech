@@ -14,17 +14,28 @@ export interface Project {
 
 export const projects: Project[] = [
     {
-        id: 'leafbid',
+        id: 'Leafbid',
         title: 'Leafbid',
         description: 'A school project made on behalf of Floriday. The entire class was working on this as individual groups of around 4-5 students.',
         imagePath: '/LeafBid.svg',
         link: '/projects/leafbid',
-        tags: ['UI', 'React', 'ASP.NET'],
+        tags: ['UI', 'Next.JS', 'ASP.NET'],
         imagePosition: 'left',
         imageShiftX: '0.25rem',
         imageShiftY: '0.75rem',
         sourceLink: "https://github.com/MishaOpstal/LeafBid",
         demoLink: "https://leafbid.onthelink.nl"
     },
+    {
+        id: "WayloTech",
+        title: "Waylotech Website",
+        description: "A website for showcasing all the projects I have made.",
+        imagePath: "/WayloTech.svg",
+        tags: ['UI', 'Next.JS'],
+        link: "/projects/waylotech",
+        sourceLink: "https://github.com/Waylo2016/WayloTech",
+        demoLink: "https://waylo.tech"
+
+    }
 
 ];
