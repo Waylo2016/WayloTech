@@ -139,7 +139,7 @@ export default function Home() {
                                   src={"/MailVector.svg"}
                               />
                           </a>
-                          <a className={`d-flex align-content-center justify-content-center hover-scale ${s.contactButton}`} href={"https://github.com/Waylo2016"}>
+                          <a className={`d-flex align-content-center justify-content-center hover-scale ${s.contactButton}`} href={"https://github.com/Waylo2016"} target={"_blank"}>
                               <img
                                   className={`${s.contactButtonSelf}`}
                                   src={"/githubIcon.svg"}

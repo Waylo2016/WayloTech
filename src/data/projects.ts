@@ -13,6 +13,9 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+
+    //TODO: fix the damn alignment of the svg's. Maybe add in a second positioning item for the projectheaders?
+
     {
         id: 'Leafbid',
         title: 'Leafbid',
@@ -21,11 +24,23 @@ export const projects: Project[] = [
         link: '/projects/leafbid',
         tags: ['UI', 'Next.JS', 'ASP.NET'],
         imagePosition: 'left',
-        imageShiftX: '0.25rem',
+        imageShiftX: '0rem',
         imageShiftY: '0.75rem',
         sourceLink: "https://github.com/MishaOpstal/LeafBid",
         demoLink: "https://leafbid.onthelink.nl"
     },
+    {
+        id: 'Waylotech',
+        title: 'WayloTech',
+        description: 'A personal portfolio website made for me and by me.',
+        imagePath: '/WayloTechWhite.svg',
+        link: '/projects/waylotech',
+        tags: ['UI', 'Next.JS', 'TypeScript'],
+        imagePosition: 'right',
+        imageShiftX: '-0.25rem',
+        sourceLink: "https://github.com/Waylo2016/WayloTech",
+        demoLink: "https://waylo.tech"
+    }
 
 
 ];

@@ -42,7 +42,7 @@ const ProjectHeader: React.FC<ProjectComponentProps> = ({
                     <div className={s.textSection}>
                         <h1 className={s.title}>{title}</h1>
                         <p className={`mb-5 ${s.description}`}>{description}</p>
-                        <a className={`d-flex align-content-center justify-content-center hover-scale ${s.contactButton}`} href={sourceLink}>
+                        <a className={`d-flex align-content-center justify-content-center hover-scale ${s.contactButton}`} href={sourceLink} target="_blank" rel="noopener noreferrer">
                             <img
                                 className={`${s.contactButtonSelf}`}
                                 src={"/githubIcon.svg"}

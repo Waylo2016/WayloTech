@@ -1,5 +1,5 @@
 // app/not-found.tsx
-import s from "./not-found.module.css"; // or "./page.module.css" if you prefer
+import s from "./not-found.module.css"; // or "./ProjectPages.module.css" if you prefer
 import Header from "@/components/Header/Header";
 import Link from "next/link";
 

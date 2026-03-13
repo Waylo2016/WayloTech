@@ -1,6 +1,6 @@
 import Header from "@/components/Header/Header";
 import ProjectHeader from "@/components/ProjectHeader/ProjectHeader";
-import s from "./page.module.css";
+import s from "../ProjectPages.module.css";
 import {projects} from "@/data/projects";
 
 export default function LeafbidPage() {
