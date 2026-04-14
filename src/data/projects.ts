@@ -29,18 +29,18 @@ export const projects: Project[] = [
         sourceLink: "https://github.com/MishaOpstal/LeafBid",
         demoLink: "https://leafbid.onthelink.nl"
     },
-    {
-        id: 'Waylotech',
-        title: 'WayloTech',
-        description: 'A personal portfolio website made for me and by me.',
-        imagePath: '/WayloTechWhite.svg',
-        link: '/projects/waylotech',
-        tags: ['UI', 'Next.JS', 'TypeScript'],
-        imagePosition: 'right',
-        imageShiftX: '-0.25rem',
-        sourceLink: "https://github.com/Waylo2016/WayloTech",
-        demoLink: "https://waylo.tech"
-    }
+    // {
+    //     id: 'Waylotech',
+    //     title: 'WayloTech',
+    //     description: 'A personal portfolio website made for me and by me.',
+    //     imagePath: '/WayloTechWhite.svg',
+    //     link: '/projects/waylotech',
+    //     tags: ['UI', 'Next.JS', 'TypeScript'],
+    //     imagePosition: 'right',
+    //     imageShiftX: '-0.25rem',
+    //     sourceLink: "https://github.com/Waylo2016/WayloTech",
+    //     demoLink: "https://waylo.tech"
+    // }
 
 
 ];
