@@ -88,6 +88,3 @@ jobs:
             
             # Herstart de generieke Node container die je in Portainer hebt gemaakt
             docker restart waylotechmainsite
-            
-            # Herstart de container
-            docker compose up -d --force-recreate
