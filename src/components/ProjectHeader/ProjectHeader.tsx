@@ -12,8 +12,9 @@ const ProjectHeader: React.FC<ProjectComponentProps> = ({
                                                          imagePath,
                                                          tags,
                                                          imagePosition = 'right',
-                                                         imageShiftX,
-                                                         imageShiftY,
+                                                         imageHeaderShiftX,
+                                                         imageHeaderShiftY,
+                                                         imageHeaderZoom,
                                                          sourceLink,
                                                          demoLink,
                                                          children
@@ -58,7 +59,7 @@ const ProjectHeader: React.FC<ProjectComponentProps> = ({
                                             alt={title}
                                             className={s.image}
                                             style={{
-                                                transform: `translateX(${imageShiftX ?? '0rem'}) translateY(${imageShiftY ?? '0rem'})`,
+                                                transform: `translateX(${imageHeaderShiftX ?? '0rem'}) translateY(${imageHeaderShiftY ?? '0rem'}) scale(${imageHeaderZoom ?? '1'})`,
                                                 width: '100%', // Ensure image respects boundaries
                                                 height: 'auto',
                                             }}

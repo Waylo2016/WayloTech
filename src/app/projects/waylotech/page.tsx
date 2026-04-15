@@ -7,6 +7,8 @@ export default function WayloTechPage() {
     // Find the project data by ID
     const project = projects.find(p => p.id === 'Waylotech');
 
+    //TODO: please yap more myself about the pricing issue
+
     // Fallback if project isn't found
     if (!project) return <div>Project not found</div>;
     return (
@@ -26,6 +28,50 @@ export default function WayloTechPage() {
                                     This website i showcases my projects, skills, and experiences.
                                     The website is built using Next.js and TypeScript, providing a modern and responsive user interface.
                                 </p>
+                                <p className={`${s.paragraph} pt-1`}>
+                                    The biggest thing, for me, was buying out a domain. It was quite a daunting quest to find a satisfactory domain, hah!
+                                    But finally, I have one I am satisfied with. Then was setting up actual hosting, as I only bought me a domain.
+                                    First I went with Microsoft Azure, but for reasons I will go into later, I am now comfortably hosting a VPS in the cloud somewhere.
+                                </p>
+                                <h1 className={`${s.header} pt-1`}>Challenges</h1>
+
+                                <div id={"List of challenges"} className={` ${s.list}`}>
+                                    <ul>
+                                        <li>
+                                            <a href={"#Pricing"}>Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href={"#WebsiteDesign"}>Website Design</a>
+                                        </li>
+                                        <li>
+                                            <a href={"#Next.JS"}>Using Next.JS (again!)</a>
+                                        </li>
+                                        <li>
+                                            <a href={"#DNSandN"}>Struggling with a few DNS issues (and some networks)</a>
+                                        </li>
+                                        <li>
+                                            <a href={"#Nginx"}>Learning to use Nginx</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <h2 className={`${s.header2} pt-1`} id={"Pricing"}>Pricing</h2>
+                                <p className={`${s.paragraph} pt-1`}>
+                                    As hinted to earlier, pricing was a real issue for me.
+                                    First I was using Azure for web hosting, but that cost me a whopping 24 euro per month!
+                                    To many this may not seem like a lot, but to me it truly is.
+                                    I wanted to move off of that ASAP, but I also didn't want to open ports on my home network.
+                                    While I do have a tailscale network, I will always be slightly paranoid.
+                                    I'd rather not have my home network encroached upon!
+                                    Even if I was hiding behind a few layers of security, like nginx and tailscale.
+                                </p>
+                                <p className={`${s.paragraph} pt-1`}>
+                                    Even if doing it that way truly is the cheapest way, I will pay a bit extra to have a few extra layers of security.
+                                    So now I "Self host" my website on a VPS somewhere in the cloud, said VPS only costing me 10 euros a month. That's a 14 euro save, which to me is huge!
+                                    Instead of a relatively easy deployment using azure and github, I now emulate this deployment onto a container that I can access with Github actions.
+                                    It is slightly more setup than the azure deployment pipeline, but it works just as good.
+                                </p>
+
                             </div>
                         </div>
                     </div>

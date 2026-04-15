@@ -6,8 +6,12 @@ export interface Project {
     tags: string[];
     link: string;
     imagePosition?: 'left' | 'right';
-    imageShiftX?: string;
-    imageShiftY?: string;
+    imageCardShiftX?: string;
+    imageCardShiftY?: string;
+    imageCardZoom?: string;
+    imageHeaderShiftX?: string;
+    imageHeaderShiftY?: string;
+    imageHeaderZoom?: string;
     sourceLink?: string;
     demoLink?: string;
 }

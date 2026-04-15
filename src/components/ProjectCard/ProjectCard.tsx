@@ -10,8 +10,9 @@ const ProjectCard: React.FC<Project> = ({
     imagePath,
     link,
     tags,
-    imageShiftX,
-    imageShiftY,
+    imageCardShiftX,
+    imageCardShiftY,
+    imageCardZoom,
 }) => {
     const CardWrapper = link ? Link : 'div';
     const wrapperProps = link
@@ -27,7 +28,7 @@ const ProjectCard: React.FC<Project> = ({
                             src={imagePath}
                             alt={title}
                             className={s.projectImage}
-                            style={{ transform: `translateX(${imageShiftX ?? '0rem'}) translateY(${imageShiftY ?? '0rem'})` }}
+                            style={{ transform: `translateX(${imageCardShiftX ?? '0rem'}) translateY(${imageCardShiftY ?? '0rem'}) scale(${imageCardZoom ?? '1'})` }}
                         />
                     ) : null}
                 </div>

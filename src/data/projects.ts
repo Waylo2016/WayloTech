@@ -6,15 +6,17 @@ export interface Project {
     tags: string[];
     link: string;
     imagePosition?: 'left' | 'right';
-    imageShiftX?: string;
-    imageShiftY?: string;
+    imageCardShiftX?: string;
+    imageCardShiftY?: string;
+    imageCardZoom?: string;
+    imageHeaderShiftX?: string;
+    imageHeaderShiftY?: string;
+    imageHeaderZoom?: string;
     sourceLink?: string;
     demoLink?: string;
 }
 
 export const projects: Project[] = [
-
-    //TODO: fix the damn alignment of the svg's. Maybe add in a second positioning item for the projectheaders?
 
     {
         id: 'Leafbid',
@@ -24,23 +26,24 @@ export const projects: Project[] = [
         link: '/projects/leafbid',
         tags: ['UI', 'Next.JS', 'ASP.NET'],
         imagePosition: 'left',
-        imageShiftX: '0rem',
-        imageShiftY: '0.75rem',
+        imageCardShiftX: '-0.8rem',
+        imageCardShiftY: '0.75rem',
         sourceLink: "https://github.com/MishaOpstal/LeafBid",
         demoLink: "https://leafbid.onthelink.nl"
     },
-    // {
-    //     id: 'Waylotech',
-    //     title: 'WayloTech',
-    //     description: 'A personal portfolio website made for me and by me.',
-    //     imagePath: '/WayloTechWhite.svg',
-    //     link: '/projects/waylotech',
-    //     tags: ['UI', 'Next.JS', 'TypeScript'],
-    //     imagePosition: 'right',
-    //     imageShiftX: '-0.25rem',
-    //     sourceLink: "https://github.com/Waylo2016/WayloTech",
-    //     demoLink: "https://waylo.tech"
-    // }
+    {
+        id: 'Waylotech',
+        title: 'WayloTech',
+        description: 'A personal portfolio website made for me and by me.',
+        imagePath: '/WayloTechWhite.svg',
+        link: '/projects/waylotech',
+        tags: ['UI', 'Next.JS', 'TypeScript'],
+        imagePosition: 'left',
+        imageCardShiftX: '-0.25rem',
+        imageHeaderZoom: '2.5',
+        sourceLink: "https://github.com/Waylo2016/WayloTech",
+        demoLink: "https://waylo.tech"
+    }
 
 
 ];
