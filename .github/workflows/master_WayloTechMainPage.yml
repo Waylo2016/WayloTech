@@ -11,6 +11,7 @@ on:
 
 env:
   NODE_VERSION: "24"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build:
@@ -81,7 +82,9 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             cd /opt/app
-            rm -rf current
+            mkdir -p current
             unzip -o release.zip -d current
             rm release.zip
-            docker compose restart app
+            
+            # Herstart de generieke Node container die je in Portainer hebt gemaakt
+            docker restart waylotechmainsite
