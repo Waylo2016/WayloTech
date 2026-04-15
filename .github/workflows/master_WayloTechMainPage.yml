@@ -36,10 +36,6 @@ jobs:
           mkdir -p deploy
           cp -rL .next/standalone/. deploy/
 
-          if [ -f "docker-compose.yml" ]; then
-            cp docker-compose.yml deploy/
-          fi
-
           if [ -d "public" ]; then
             mkdir -p deploy/public
             cp -rL public/. deploy/public/
@@ -84,14 +80,13 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-           cd /opt/app
-            # Maak de map aan als die niet bestaat
+            cd /opt/app
             mkdir -p current
-            # Pak de boel uit
             unzip -o release.zip -d current
             rm release.zip
             
-            cd current
+            # Herstart de generieke Node container die je in Portainer hebt gemaakt
+            docker restart waylotechmainsite
             
             # Herstart de container
             docker compose up -d --force-recreate
