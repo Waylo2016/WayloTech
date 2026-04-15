@@ -36,6 +36,10 @@ jobs:
           mkdir -p deploy
           cp -rL .next/standalone/. deploy/
 
+          if [ -f "docker-compose.yml" ]; then
+            cp docker-compose.yml deploy/
+          fi
+
           if [ -d "public" ]; then
             mkdir -p deploy/public
             cp -rL public/. deploy/public/
@@ -80,8 +84,14 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /opt/app
-            rm -rf current
+           cd /opt/app
+            # Maak de map aan als die niet bestaat
+            mkdir -p current
+            # Pak de boel uit
             unzip -o release.zip -d current
             rm release.zip
-            docker compose restart app
+            
+            cd current
+            
+            # Herstart de container
+            docker compose up -d --force-recreate
