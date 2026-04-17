@@ -86,5 +86,4 @@ jobs:
             unzip -o release.zip -d current
             rm release.zip
             
-            # Herstart de generieke Node container die je in Portainer hebt gemaakt
             docker restart waylotechmainsite
