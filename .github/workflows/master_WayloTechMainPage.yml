@@ -1,5 +1,6 @@
 name: master_WayloTechMainPage.yml
 
+
 on:
 # push:
 #    branches:
@@ -57,7 +58,7 @@ jobs:
           path: release.zip
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: build
     steps:
       - name: Download artifact
@@ -86,5 +87,4 @@ jobs:
             unzip -o release.zip -d current
             rm release.zip
             
-            # Herstart de generieke Node container die je in Portainer hebt gemaakt
             docker restart waylotechmainsite
