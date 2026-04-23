@@ -37,7 +37,7 @@ export const projects: Project[] = [
         description: 'A personal portfolio website made for me and by me.',
         imagePath: '/WayloTechWhite.svg',
         link: '/projects/waylotech',
-        tags: ['UI', 'Next.JS', 'TypeScript'],
+        tags: ['UI', 'Next.JS', 'TypeScript', 'Networking'],
         imagePosition: 'left',
         imageCardShiftX: '-0.25rem',
         imageHeaderZoom: '2.5',

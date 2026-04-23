@@ -2,16 +2,18 @@
     font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: .5rem;
+    margin: auto;
     color: var(--text);
+    padding-top: 1.5rem;
 }
 
 .header2 {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: .5rem;
+    margin: auto;
     color: var(--text);
+    padding-top: 1rem;
 }
 
 .paragraph {
@@ -19,6 +21,8 @@
     color: var(--text-alt);
     line-height: 1.6;
     max-width: 600px;
+    margin: auto;
+    padding-top: 0.75rem;
 }
 
 .list {
