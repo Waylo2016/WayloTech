@@ -71,7 +71,18 @@ export default function WayloTechPage() {
                                     Instead of a relatively easy deployment using azure and github, I now emulate this deployment onto a container that I can access with Github actions.
                                     It is slightly more setup than the azure deployment pipeline, but it works just as good.
                                 </p>
+                                <p className={`${s.paragraph} pt-1`}>
+                                    The deployment pipeline is also partly done in the cloud and partly locally hosted.
+                                    I wanted to try and do the CD locally, as I am becoming quite the self-hosting enthusiast.
+                                    The CI is still done in the cloud, but due to SSH constraints I wanted to host the CD locally, at least.
+                                    This way I can have a bit more control over the deployment process itself and also have a bit more control over the security of said process.
+                                    The CI I would also like to do locally, but first I'd have to do some investments in my local server stack.
+                                </p>
 
+                                <h2 className={`${s.header2} pt-1`} id={"WebsiteDesign"}>Website Design</h2>
+                                <p className={`${s.paragraph} pt-1`}>
+
+                                </p>
                             </div>
                         </div>
                     </div>

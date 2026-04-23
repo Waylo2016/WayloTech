@@ -30,7 +30,7 @@ export default function NotFound() {
                         id="hero-tagline"
                         className={`fs-4 fw-light mb-5 ${s.heroTagline}`}
                     >
-                        The page you're trying to visit is under construction
+                        The page you're trying to visit does NOT exist buddy, please check the URL or try again later.
                     </p>
                     <div className="d-flex justify-content-center gap-3">
                         <Link
